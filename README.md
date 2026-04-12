@@ -11,7 +11,7 @@ Free to access. Free to build on. Free forever.
 ## Structure
 
 ```
-government/              ← Data from government open data portals
+gov/                     ← Data from government open data portals
 ├── federal/             ← Federal datasets (data.gov.au)
 ├── vic/                 ← Victoria
 ├── nsw/                 ← New South Wales
@@ -28,7 +28,7 @@ combined/                ← All data merged into one file
 
 **Want everything?** Download [`combined/services.csv`](combined/services.csv).
 
-**Want data from a specific state?** Browse the [`government/`](government/) folder.
+**Want data from a specific state?** Browse the [`gov/`](gov/) folder.
 
 **Want to know where the data came from?** Check the `SOURCES.md` in each folder.
 
