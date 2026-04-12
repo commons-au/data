@@ -4,62 +4,43 @@ Open dataset of support services for vulnerable people in Australia.
 
 Free to access. Free to build on. Free forever.
 
-## Download
+## Structure
 
-The dataset is available in two formats:
+```
+government/              ← Data from government open data portals
+├── federal/             ← Federal datasets (data.gov.au)
+├── vic/                 ← Victoria
+├── nsw/                 ← New South Wales
+├── qld/                 ← Queensland
+│   └── SOURCES.md       ← Attribution per state
 
-- **CSV**: [`data/services.csv`](data/services.csv)
-- **JSON**: [`data/services.json`](data/services.json)
+combined/                ← All data merged into one file
+├── services.csv         ← Full dataset as CSV
+├── services.json        ← Full dataset as JSON
+└── SOURCES.md           ← Full attribution list
+```
 
-Both contain the same data. Use whichever works for you.
+## Quick Start
+
+**Want everything?** Download [`combined/services.csv`](combined/services.csv).
+
+**Want data from a specific state?** Browse the [`government/`](government/) folder.
+
+**Want to know where the data came from?** Check the `SOURCES.md` in each folder.
 
 ## Schema
 
-Every record in the dataset follows the same structure. See [SCHEMA.md](SCHEMA.md) for the full field reference.
+Every record follows the same structure. See [SCHEMA.md](SCHEMA.md) for the full field reference.
 
-| Field | Description |
-|-------|------------|
-| `id` | Unique identifier |
-| `name` | Name of the service |
-| `description` | What the service provides |
-| `category` | Service type (food, housing, health, legal, etc.) |
-| `address` | Street address |
-| `suburb` | Suburb |
-| `state` | State or territory |
-| `postcode` | Postcode |
-| `latitude` | Latitude |
-| `longitude` | Longitude |
-| `phone` | Phone number |
-| `email` | Email address |
-| `website` | Website URL |
-| `hours` | Opening hours |
-| `eligibility` | Who can access the service |
-| `cost` | Cost (Free, Low-cost, etc.) |
+## How This Data Is Updated
 
-## Data Sources
-
-All government data is used under Creative Commons Attribution licenses. Full attribution is in [SOURCES.md](SOURCES.md).
-
-The dataset is updated weekly by an automated pipeline from [commons-au/pipeline](https://github.com/commons-au/pipeline).
-
-## Contributing
-
-Know a service that isn't listed? See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add it.
+An automated pipeline fetches data from Australian government open data portals, standardises it, and pushes it here. See [commons-au/pipeline](https://github.com/commons-au/pipeline).
 
 ## Using This Data
 
-This data is released under [CC0 1.0](LICENSE) — public domain, no restrictions. You can:
-
-- Build an app
-- Print it out
-- Feed it into a chatbot
-- Share it however you want
-
-No permission needed.
-
-**Note**: While the combined dataset is CC0, individual records sourced from government portals carry their original CC-BY licenses and require attribution. See [SOURCES.md](SOURCES.md).
+Government-sourced data carries Creative Commons Attribution licenses — see the `SOURCES.md` files for details. Each record also embeds its source metadata (`source_organisation`, `source_license`, `source_url`) so attribution travels with the data.
 
 ## Related
 
-- [commons-au/landscape](https://github.com/commons-au/landscape) — Research on Australian open data portals and what's available
+- [commons-au/landscape](https://github.com/commons-au/landscape) — Research on Australian open data portals
 - [commons-au/pipeline](https://github.com/commons-au/pipeline) — The ETL pipeline that builds this dataset
