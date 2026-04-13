@@ -27,5 +27,7 @@ Used under their respective Creative Commons licenses.
 - **City of Casey**, VIC, *Family Maternal Child Health Centre Locations*, Sourced on 13 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/family-maternal-child-health-centre-locations). License: Other (Open)
 - **SA Health**, SA, *Child and Family Health Service Centre Locations*, Sourced on 13 April 2026, [Dataset URL](https://data.gov.au/data/dataset/list-of-child-and-family-health-service-centre-locations). License: CC-BY-3.0-AU
 - **Geoscience Australia**, federal, *Judicial Courts*, Sourced on 13 April 2026, [Dataset URL](https://data.gov.au/data/dataset/judicial-courts). License: CC-BY-3.0-AU
+- **City of Ballarat**, VIC, *Ballarat Kindergartens*, Sourced on 13 April 2026, [Dataset URL](https://data.gov.au/data/dataset/ballarat-kindergartens). License: CC-BY-3.0-AU
+- **City of Ballarat**, VIC, *Early Learning Centres*, Sourced on 13 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/early-learning-centres). License: CC-BY-3.0-AU
 
 Last updated: 2026-04-13

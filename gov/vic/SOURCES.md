@@ -12,5 +12,7 @@ Used under their respective Creative Commons licenses.
 - **VIC Planning and Community Development**, VIC, *Neighbourhood Houses (GFYL)*, Sourced on 13 April 2026, [Dataset URL](https://data.gov.au/data/dataset/neighbourhood-houses-gfyl). License: CC-BY-3.0-AU
 - **City of Casey**, VIC, *Libraries Locations*, Sourced on 13 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/libraries-locations). License: Other (Open)
 - **City of Casey**, VIC, *Family Maternal Child Health Centre Locations*, Sourced on 13 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/family-maternal-child-health-centre-locations). License: Other (Open)
+- **City of Ballarat**, VIC, *Ballarat Kindergartens*, Sourced on 13 April 2026, [Dataset URL](https://data.gov.au/data/dataset/ballarat-kindergartens). License: CC-BY-3.0-AU
+- **City of Ballarat**, VIC, *Early Learning Centres*, Sourced on 13 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/early-learning-centres). License: CC-BY-3.0-AU
 
 Last updated: 2026-04-13
