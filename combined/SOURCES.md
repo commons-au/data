@@ -16,6 +16,8 @@ This dataset is built from Australian government open data and OpenStreetMap.
 - **Queensland Health**, QLD, *Hepatitis C Testing and Treatment Centres*, Sourced on 14 April 2026, [Dataset URL](https://www.data.qld.gov.au/dataset/hepatitis-c-testing-and-treatment-centres). License: CC-BY-4.0
 - **SA Community (Connecting Up Inc)**, SA, *SA Community Directory 2021*, Sourced on 14 April 2026, [Dataset URL](https://data.gov.au/data/dataset/sa-community-directory). License: CC-BY-3.0-AU
 - **SA Health**, SA, *Child and Family Health Service Centre Locations*, Sourced on 14 April 2026, [Dataset URL](https://data.gov.au/data/dataset/list-of-child-and-family-health-service-centre-locations). License: CC-BY-3.0-AU
+- **SA Health**, SA, *GP Plus Locations*, Sourced on 14 April 2026, [Dataset URL](https://data.sa.gov.au/data/dataset/gp-plus-locations). License: CC-BY
+- **SA Health**, SA, *SA Private Hospitals*, Sourced on 14 April 2026, [Dataset URL](https://data.sa.gov.au/data/dataset/sa-private-hospitals). License: CC-BY
 - **Department of Premier and Cabinet (Tasmania)**, TAS, *Service Tasmania Shop Locations*, Sourced on 14 April 2026, [Dataset URL](https://data.gov.au/data/dataset/service-tasmania-shop-locations). License: CC-BY-4.0
 - **City of Melbourne**, VIC, *Free and Cheap Support Services (Helping Out)*, Sourced on 14 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/free-and-cheap-support-services-with-opening-hours-public-transport-and-parking-options-helping). License: CC-BY-4.0
 - **City of Casey**, VIC, *Emergency Food Relief Groups*, Sourced on 14 April 2026, [Dataset URL](https://discover.data.vic.gov.au/dataset/emergency-food-relief-groups). License: Other (Open)
