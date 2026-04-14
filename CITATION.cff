@@ -7,6 +7,7 @@ type: dataset
 version: 1.0.0
 date-released: "2026-04-14"
 license: CC0-1.0
+doi: "10.5281/zenodo.19564281"
 url: "https://github.com/oa-sa/data"
 repository-code: "https://github.com/oa-sa"
 keywords:
