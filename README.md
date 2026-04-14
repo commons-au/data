@@ -1,4 +1,4 @@
-# commons-au/data
+# oa-sa/data
 
 Open dataset of support services for vulnerable people in Australia.
 
@@ -38,7 +38,7 @@ Every record follows the same structure. See [SCHEMA.md](SCHEMA.md) for the full
 
 ## How This Data Is Updated
 
-An automated pipeline fetches data from Australian government open data portals, standardises it, and pushes it here. See [commons-au/pipeline](https://github.com/commons-au/pipeline).
+An automated pipeline fetches data from Australian government open data portals, standardises it, and pushes it here. See [oa-sa/pipeline](https://github.com/oa-sa/pipeline).
 
 ## Using This Data
 
@@ -46,5 +46,5 @@ Government-sourced data carries Creative Commons Attribution licenses — see th
 
 ## Related
 
-- [commons-au/landscape](https://github.com/commons-au/landscape) — Research on Australian open data portals
-- [commons-au/pipeline](https://github.com/commons-au/pipeline) — The ETL pipeline that builds this dataset
+- [oa-sa/landscape](https://github.com/oa-sa/landscape) — Research on Australian open data portals
+- [oa-sa/pipeline](https://github.com/oa-sa/pipeline) — The ETL pipeline that builds this dataset

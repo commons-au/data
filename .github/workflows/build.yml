@@ -51,8 +51,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "commons-au-bot"
-          git config user.email "bot@commons-au.org"
+          git config user.name "oa-sa-bot"
+          git config user.email "bot@oa-sa.org"
           git add combined/ README.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
