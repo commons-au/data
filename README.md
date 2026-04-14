@@ -42,9 +42,9 @@ An automated pipeline fetches data from Australian government open data portals,
 
 ## Using This Data
 
-Government-sourced data carries Creative Commons Attribution licenses — see the `SOURCES.md` files for details. Each record also embeds its source metadata (`source_organisation`, `source_license`, `source_url`) so attribution travels with the data.
+Government-sourced data carries Creative Commons Attribution licenses - see the `SOURCES.md` files for details. Each record also embeds its source metadata (`source_organisation`, `source_license`, `source_url`) so attribution travels with the data.
 
 ## Related
 
-- [oa-sa/landscape](https://github.com/oa-sa/landscape) — Research on Australian open data portals
-- [oa-sa/pipeline](https://github.com/oa-sa/pipeline) — The ETL pipeline that builds this dataset
+- [oa-sa/landscape](https://github.com/oa-sa/landscape) - Research on Australian open data portals
+- [oa-sa/pipeline](https://github.com/oa-sa/pipeline) - The ETL pipeline that builds this dataset

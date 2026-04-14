@@ -46,7 +46,7 @@ Each record is scored based on how useful it is for someone trying to find or co
 |---------|---------|-----------|
 | `complete` | Has location (address or coordinates) AND contact info (phone, website, or email) | ~84% |
 | `partial` | Has either location OR contact info, but not both | ~15% |
-| `minimal` | Has neither — just a name and category | ~1% |
+| `minimal` | Has neither - just a name and category | ~1% |
 
 ## Categories
 
