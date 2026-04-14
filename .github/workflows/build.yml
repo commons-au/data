@@ -1,0 +1,59 @@
+name: Build Combined Dataset
+
+on:
+  # Trigger when gov/ or osm/ data changes
+  push:
+    paths:
+      - 'gov/**'
+      - 'osm/**'
+  # Also allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Merge and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build combined dataset
+        run: python scripts/build_combined.py
+
+      - name: Update README with status
+        run: |
+          DATE=$(date -u +"%d %B %Y")
+          RECORDS=$(tail -n +2 combined/services.csv | wc -l | tr -d ' ')
+          GOV_SOURCES=$(ls gov/*/SOURCES.md 2>/dev/null | wc -l | tr -d ' ')
+          OSM_COUNT=$(tail -n +2 osm/osm_social_facilities.csv 2>/dev/null | wc -l | tr -d ' ')
+          STATUS="**Last updated**: ${DATE} | **${RECORDS} services** from **${GOV_SOURCES} state(s)** gov data + **${OSM_COUNT}** OSM records"
+          export STATUS
+          python3 << 'PYEOF'
+          import os, re
+          status = os.environ["STATUS"]
+          with open("README.md", "r") as f:
+              content = f.read()
+          content = re.sub(
+              r"<!-- PIPELINE_STATUS_START -->.*?<!-- PIPELINE_STATUS_END -->",
+              f"<!-- PIPELINE_STATUS_START -->\n{status}\n<!-- PIPELINE_STATUS_END -->",
+              content,
+              flags=re.DOTALL,
+          )
+          with open("README.md", "w") as f:
+              f.write(content)
+          PYEOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "commons-au-bot"
+          git config user.email "bot@commons-au.org"
+          git add combined/ README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Rebuild combined dataset ($(date -u +%Y-%m-%d))"
+            git push
+          fi
