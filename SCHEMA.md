@@ -14,8 +14,8 @@ Every record in `services.csv` and `services.json` follows this schema.
 | `suburb` | string | No | Suburb or locality |
 | `state` | string | Yes | Australian state or territory: ACT, NSW, NT, QLD, SA, TAS, VIC, WA |
 | `postcode` | string | No | 4-digit Australian postcode |
-| `latitude` | number | No | Latitude in decimal degrees (e.g. -37.8136) |
-| `longitude` | number | No | Longitude in decimal degrees (e.g. 144.9631) |
+| `latitude` | number | No | Latitude in decimal degrees (e.g. -37.8136). May be a postcode centroid — check `location_precision`. |
+| `longitude` | number | No | Longitude in decimal degrees (e.g. 144.9631). May be a postcode centroid — check `location_precision`. |
 | `phone` | string | No | Phone number |
 | `email` | string | No | Email address |
 | `website` | string | No | Website URL |
@@ -37,6 +37,7 @@ These fields track where each record came from.
 | `source_url` | string | URL to the original dataset |
 | `source_date` | string | Date the data was sourced (YYYY-MM-DD) |
 | `quality` | string | Record completeness: `complete` (has location + contact), `partial` (has one), `minimal` (has neither) |
+| `location_precision` | string | Precision of the lat/lng: `address` (from source, street-level), `postcode` (postcode centroid used as fallback, suburb-level accuracy), `none` (no coordinates). Consumers displaying maps should surface this so users know when a pin is approximate. |
 | `duplicate_of` | string | If set, the `id` of another record that represents the same service. Populated only when a duplicate is detected across sources. |
 
 ## Quality

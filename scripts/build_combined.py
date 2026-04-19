@@ -26,7 +26,7 @@ SCHEMA_FIELDS = [
     "postcode", "latitude", "longitude", "phone", "email", "website",
     "hours", "eligibility", "cost", "source_id", "source_name",
     "source_organisation", "source_jurisdiction", "source_license",
-    "source_url", "source_date", "quality", "duplicate_of",
+    "source_url", "source_date", "quality", "location_precision", "duplicate_of",
 ]
 
 
@@ -189,6 +189,8 @@ def map_osm_record(row):
     else:
         quality = "minimal"
 
+    precision = "address" if row.get("lat", "").strip() and row.get("lon", "").strip() else "none"
+
     return {
         "id": "",  # Will be assigned during merge
         "name": name,
@@ -214,6 +216,7 @@ def map_osm_record(row):
         "source_url": "https://www.openstreetmap.org",
         "source_date": date.today().isoformat(),
         "quality": quality,
+        "location_precision": precision,
     }
 
 
@@ -270,6 +273,7 @@ def write_sqlite(records, path):
             source_url TEXT,
             source_date TEXT,
             quality TEXT,
+            location_precision TEXT,
             duplicate_of TEXT
         )
     """)
